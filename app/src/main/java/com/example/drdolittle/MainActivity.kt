@@ -2,7 +2,7 @@ package com.example.drdolittle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.drdolittle.ui.main.MainFragment
+import com.example.drdolittle.ui.main.fragment.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

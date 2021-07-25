@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DrDolittle</string>
+    <string name="app_dr_dolittle_s_logo">App Dr. Dolittle\'s logo</string>
+    <string name="daily_animal_text">Animal do Dia</string>
+    <string name="daily_chosen_animal">Animal escolhido diariamente</string>
+    <string name="domestic_animals">Animais Domésticos</string>
+    <string name="wild_animals">Animais Selvagens</string>
+    <string name="dangerous_animals">Animais<br/>Perigosos</string>
+    <string name="extinct_animals">Animais<br/>Extintos</string>
 </resources>

@@ -8,4 +8,17 @@
     <string name="wild_animals">Animais Selvagens</string>
     <string name="dangerous_animals">Animais\nPerigosos</string>
     <string name="extinct_animals">Animais\nExtintos</string>
+
+<!--    Animal Details Fragment-->
+    <string name="animal_image">Imagem do animal</string>
+    <string name="unknown_name">Nome Desconhecido</string>
+    <string name="scientific_name">Nome Científico:</string>
+    <string name="unknown_scientific_name">nome científico desconhecido</string>
+    <string name="extra_details">Descrição da família e características gerais do animal</string>
+    <string name="where_to_find">Onde é encontrado:</string>
+    <string name="where_it_lives">País/Região onde é encontrado</string>
+    <string name="what_does_it_eat">O que come:</string>
+    <string name="next_animal">Próximo Animal</string>
+    <string name="previous_animal">Animal Anterior</string>
+    <string name="animal_feed_description">Descrição da alimentação do animal</string>
 </resources>

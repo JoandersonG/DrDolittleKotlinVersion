@@ -149,7 +149,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/home_category_horizontal"
-        android:backgroundTint="@color/extint_blue"
+        android:backgroundTint="@color/extinct_blue"
         android:drawableTop="@drawable/dinossaur"
         android:fontFamily="sans-serif"
         android:paddingBottom="32dp"

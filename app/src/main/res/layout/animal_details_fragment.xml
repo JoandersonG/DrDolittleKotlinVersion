@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.main.fragment.AnimalDetailsFragment">
 
+    <data>
+        <variable
+            name="animal"
+            type="com.example.drdolittle.model.Animal" />
+    </data>
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -45,7 +51,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
                     android:gravity="center"
-                    android:text="@string/unknown_name"
+                    tools:text="@string/unknown_name"
+                    android:text="@{animal.name}"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +79,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="@string/unknown_scientific_name"
+                    android:text="@{animal.scientificName}"
+                    tools:text="@string/unknown_scientific_name"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvScientificNameLabel" />
@@ -84,7 +92,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:gravity="center"
-                    android:text="@string/extra_details"
+                    tools:text="@string/extra_details"
+                    android:text="@{animal.extraDetails}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvScientificName" />
@@ -109,7 +118,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="@string/where_it_lives"
+                    tools:text="@string/where_it_lives"
+                    android:text="@{animal.whereToFind}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvWhereToFindLabel" />
@@ -133,7 +143,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="@string/animal_feed_description"
+                    tools:text="@string/animal_feed_description"
+                    android:text="@{animal.whatDoesItEat}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvWhatDoesItEatLabel" />

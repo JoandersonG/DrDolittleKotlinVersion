@@ -8,15 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.drdolittle.R
+import com.example.drdolittle.model.Category
 import com.example.drdolittle.ui.main.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.main_fragment.*
 
 
 class MainFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = MainFragment()
-    }
 
     private lateinit var viewModel: MainViewModel
 
@@ -35,7 +32,23 @@ class MainFragment : Fragment() {
 
     private fun setOnClicks() {
         cvAnimalDoDia.setOnClickListener {
-            val action = MainFragmentDirections.actionMainFragmentToAnimalDetailsFragment()
+            val action = MainFragmentDirections.actionMainFragmentToAnimalDetailsFragment(Category.NENHUMA)
+            findNavController().navigate(action)
+        }
+        btAnimaisDomesticos.setOnClickListener {
+            val action = MainFragmentDirections.actionMainFragmentToAnimalDetailsFragment(Category.DOMESTICO)
+            findNavController().navigate(action)
+        }
+        btAnimaisSelvagens.setOnClickListener {
+            val action = MainFragmentDirections.actionMainFragmentToAnimalDetailsFragment(Category.SELVAGEM)
+            findNavController().navigate(action)
+        }
+        btAnimaisPerigosos.setOnClickListener {
+            val action = MainFragmentDirections.actionMainFragmentToAnimalDetailsFragment(Category.PERIGOSO)
+            findNavController().navigate(action)
+        }
+        btAnimaisExtintos.setOnClickListener {
+            val action = MainFragmentDirections.actionMainFragmentToAnimalDetailsFragment(Category.EXTINTO)
             findNavController().navigate(action)
         }
     }

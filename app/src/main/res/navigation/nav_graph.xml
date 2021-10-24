@@ -17,5 +17,9 @@
     <fragment
         android:id="@+id/animalDetailsFragment"
         android:name="com.example.drdolittle.ui.main.fragment.AnimalDetailsFragment"
-        android:label="AnimalDetailsFragment" />
+        android:label="AnimalDetailsFragment" >
+        <argument
+            android:name="category"
+            app:argType="com.example.drdolittle.model.Category" />
+    </fragment>
 </navigation>

@@ -3,6 +3,8 @@ plugins {
     id 'kotlin-android'
     id("androidx.navigation.safeargs.kotlin")
     id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+//    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -53,6 +55,14 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
     implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
+
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:28.3.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    //Corrotinas
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1")
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
